@@ -1,0 +1,64 @@
+.sky
+{
+height: 100%;
+background: blue;
+box-sizing: border-box;
+border-top: 60px solid blue;
+border-bottom: 60px solid blue;
+width: 100%;
+}
+
+.grass
+{
+height: 100%;
+background: green;
+box-sizing: border-box;
+border-top: 30px solid green;
+border-bottom: 60px solid green;
+width: 100%;
+}
+
+
+.road
+{
+height: 30%;
+background: dimgrey;
+box-sizing: border-box;
+border-top: 10px solid grey;
+border-bottom: 10px solid grey;
+width: 100%;
+}
+
+
+.lines
+{
+box-sizing: border-box;
+color: white;
+border: 0px dashed #fff;
+height: 20px;
+width: 100%;
+position: absolute;
+top: 45%;
+}
+
+.mario
+{
+position: absolute;
+top: 50px;
+left: 0px;
+animation-name: drive;
+animation-duration: 3s; 
+animation-fill-mode: forwards;
+animation-delay: 2s;
+}
+
+
+@keyframes drive
+{	
+from{ transform: translateX(0px)}
+to{ transform: translateX(900px) }
+}
+
+img {
+    width: 8%;
+}
